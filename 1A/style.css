@@ -1,0 +1,43 @@
+html{
+    margin: 0px;
+}
+body{
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    margin: auto;
+    padding: 0px;
+    margin-top: 0px;
+    
+}
+body header{
+    text-align: center;
+    /* background-color: #F1A06A; */
+    margin-top: 2rem;
+}
+
+
+body footer{
+    
+    text-align: center;
+    /* background-color: #5E6DD5; */
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+table th{
+    padding: 15px;
+
+
+}
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.ImageTxtSS {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 2fr 2fr 2fr;
+    column-gap: 15px; 
+    margin-top: 2rem;
+   }

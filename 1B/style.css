@@ -1,0 +1,30 @@
+
+body{
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    
+} 
+header{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+.row {
+    display: flex;
+  }
+  
+.coloumn{
+    margin-top: 5rem;
+    flex: 33.33%;
+    padding: 5px;
+    float: left;
+}
+
+.Testimony{
+    margin-top: 5rem;
+    padding-left: 30rem;
+}

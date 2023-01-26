@@ -192,6 +192,18 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
 .work :hover img{
     transform: scale(1.1);
 }
@@ -219,8 +231,8 @@ nav ul li a:hover::after{
     margin-left: 40%;
 }
 
-.social-icons p{
-    
+.social-icons a{
+    color: #fff;
     display: inline-block;
     font-size: 3rem;
     padding: 5px;
@@ -235,3 +247,45 @@ nav ul li a:hover::after{
         color: #fff;
        margin-left:55% ;
 }
+.sub-titlereg{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+@media only screen and (max-width :800px) {
+    .about-col-1 img{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+    #header{
+        
+       
+        height: 50vh;
+    }
+    .header-text{
+        font-size: 40px;
+    }
+    .header-text h1{
+        font-size: 50px;
+    }
+    .container nav{
+        display: none;
+    }
+    .social-icons{
+        margin-left: 10%;
+    }
+    
+}
+@media only screen and (max-width:1300px) {
+    #header{
+        background-image: none;
+    }
+    
+   
+}
+
+

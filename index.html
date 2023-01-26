@@ -12,11 +12,10 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="/img/undraw_male_avatar_g98d.svg" class="logo">
+                <img src="/img/undraw_make_it_rain_re_w9pc.svg" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About </a></li>
-                    <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -27,5 +26,69 @@
             </div>
         </div>
     </div>
+    <div id = "about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/img/undraw_developer_activity_re_39tg (1).svg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id. Sed libero enim sed faucibus turpis in. Amet volutpat consequat mauris nunc congue. Elit sed vulputate mi sit amet mauris. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Erat velit scelerisque in dictum. Porta lorem mollis aliquam ut. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Tellus elementum sagittis vitae et.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Devloping  Websites</li>
+                            <li><span>UI/UX</span><br>Devloping Websites</li>
+                            <li><span>App Developer</span><br>Devloping Websites</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>SDE</span><br>Devloping  Websites</li>
+                            <li><span>UI/UX</span><br>Devloping Websites</li>
+                            <li><span>App Developer</span><br>Devloping Websites</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Graduate</span><br>Devloping  Websites</li>
+                            <li><span>UI/UX</span><br>Devloping Websites</li>
+                            <li><span>App Developer</span><br>Devloping Websites</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id = "portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            console.log(tablinks);
+            console.log(tabcontents);
+            for ( tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for ( tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
 </body>
+
 </html>

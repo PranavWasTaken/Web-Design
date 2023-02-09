@@ -1,0 +1,67 @@
+label {
+    float: left;
+    width: 150px;
+}
+
+#container {
+    width: 700px;
+    margin: auto;
+    background-color: beige;
+}
+
+main {
+    padding: 50px;
+}
+
+#fname {
+    color: red;
+    font-size: 10pt;
+}
+
+#lname {
+    color: red;
+    font-size: 10pt;
+}
+
+#email {
+    color: red;
+    font-size: 10pt;
+}
+
+#phone {
+    color: red;
+    font-size: 10pt;
+}
+
+#cityid {
+    color: red;
+    font-size: 10pt;
+}
+
+#stateid {
+    color: red;
+    font-size: 10pt;
+}
+
+#zip {
+    color: red;
+    font-size: 10pt;
+}
+
+table {
+    width: 100%;
+    text-align: centre;
+}
+
+table,
+td {
+    border: 1px solid rgb(60, 60, 133);
+    text-align: centre;
+}
+
+#head {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}

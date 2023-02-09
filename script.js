@@ -1,5 +1,4 @@
-
-// VAlidating First Name 
+// Validating FIRST NAME 
 var validatefname = false;
 firstName.addEventListener("keyup", () => {
     const firstName = document.getElementById("firstName");
@@ -16,7 +15,7 @@ firstName.addEventListener("keyup", () => {
         validatefname = false;
     }
 })
-// VAlidating Last Name 
+// Validating LAST NAME 
 var validatelname = false;
 lastName.addEventListener("keyup", () => {
     const lastName = document.getElementById("lastName");
@@ -33,7 +32,7 @@ lastName.addEventListener("keyup", () => {
         validatelname = false;
     }
 })
-// VAlidating Email  
+// Validating EMAIL 
 var validateemail = false;
 emailId.addEventListener("keyup", () => {
     const emailId = document.getElementById("emailId");
@@ -51,7 +50,7 @@ emailId.addEventListener("keyup", () => {
         validateemail = false;
     }
 })
-// VAlidating Phone  
+// Validating PHONE 
 var validatephone = false;
 phoneNumber.addEventListener("keyup", () => {
     const phoneNumber = document.getElementById("phoneNumber");
@@ -68,7 +67,7 @@ phoneNumber.addEventListener("keyup", () => {
         validatephone = false;
     }
 })
-// VAlidating City 
+// Validating CITY
 var validatecity = false;
 city.addEventListener("keyup", () => {
     const city = document.getElementById("city");
@@ -85,7 +84,7 @@ city.addEventListener("keyup", () => {
         validatecity = false;
     }
 })
-// VAlidating State 
+// Validating STATE
 var validatestate = false;
 state.addEventListener("keyup", () => {
     const state = document.getElementById("state");
@@ -102,7 +101,7 @@ state.addEventListener("keyup", () => {
         validatestate = false;
     }
 })
-// VAlidating Zip 
+// Validating ZIP 
 var validatezip = false;
 zipcode.addEventListener("keyup", () => {
     const zipcode = document.getElementById("zipcode");
@@ -191,24 +190,6 @@ form.addEventListener('submit', (e) => {
         && validatezip && document.getElementById("streetAddress1") != "") {
 
         let template = `
-        
-                <tr>
-                    <th>Title</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email ID</th>
-                    <th>Phone Number</th>
-                    <th>Street Address 1</th>
-                    <th>Street Address 2</th>
-                    <th>City</th>
-                    <th>State</th>
-                    <th>Zip Code</th>
-                    <th>Source</th>
-                    <th>Comments</th>
-                    <th>Drink Type</th>
-                    <th>Drink</th>
-                    <th>Reason</th>
-                </tr>
                 <tr>
                 <td>${titleans}</td>
                 <td>${document.getElementById("firstName").value}</td>

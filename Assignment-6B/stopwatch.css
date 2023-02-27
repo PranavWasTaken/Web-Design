@@ -10,7 +10,9 @@
 button{
     background-color: rgb(172, 172, 190);
     border-color: rgb(172, 172, 190);
+    margin: auto;
     font-size: 1.125rem;
+    border-radius: 2rem;
 }
 .time{
     font-size: 5rem;

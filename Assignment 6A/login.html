@@ -79,6 +79,66 @@
         var isUserValid = false;
         var isEmailVald = false;
         var isPasswordValid = false;
+        // Name Validation 
+          if(name == ""){
+            $(".nameErr").html(
+              "Enter username" +
+                " " +
+                '<i class="fa fa-times" aria-hidden="true"></i>'
+            )
+          } else if( name.length <  5){
+            $(".nameErr").html(
+            "UserName  shuould be of 5 characters " +
+                " " +
+                '<i class="fa fa-times" aria-hidden="true"></i>'
+          )}
+          else if (name) {
+            $(".nameErr").html("");
+            isUserValid  = true;
+            console.log(isUserValid);
+          }
+          // Email Validations 
+          if (email == "") {
+          $(".emailErr").html(
+            "Enter email" +
+              " " +
+              '<i class="fa fa-times" aria-hidden="true"></i>'
+          );
+        } else if (!Pattern.test(email)) {
+          $(".emailErr").html(
+            "Enter valid email" +
+              " " +
+              '<i class="fa fa-times" aria-hidden="true"></i>'
+          );
+        } else if (email) {
+          $(".emailErr").html("");
+          isEmailVald = true;
+          console.log(isEmailVald);
+        }
+        // Passowrd Validation 
+          if(pass == ""){
+            $(".passwordErr").html(
+              "Enter Password" +
+                " " +
+                '<i class="fa fa-times" aria-hidden="true"></i>'
+            )
+          } else if(pass.length< 6){
+            $(".passwordErr").html(
+            "Password shuould be of 6 characters " +
+                " " +
+                '<i class="fa fa-times" aria-hidden="true"></i>'
+          )}
+          else if (pass) {
+            $(".passwordErr").html("");
+            isPasswordValid  = true;
+            
+          }
+          console.log(name.length)
+          console.log({isUserValid,isEmailVald,isPasswordValid})
+          
+          if (isUserValid && isEmailVald && isPasswordValid) {
+          document.location.href = "./calculator.html?username=" + name;
+        }
       }
     </script>
 </body>
